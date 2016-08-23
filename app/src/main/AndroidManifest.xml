@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fruitful.com.fruitful">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="fruitful.com.fruitful.ChooserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="fruitful.com.fruitful.CustomAuthActivity"
+            android:label="@string/label_custom_auth" />
+        <activity
+            android:name="fruitful.com.fruitful.GoogleSignInActivity"
+            android:label="@string/label_google_sign_in" />
+        <activity
+            android:name=".FacebookLoginActivity"
+            android:label="@string/label_facebook_login" />
+        <activity
+            android:name="fruitful.com.fruitful.EmailPasswordActivity"
+            android:label="@string/label_emailpassword"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="fruitful.com.fruitful.AnonymousAuthActivity"
+            android:label="@string/label_anonymous_auth" />
+
+        <activity
+            android:name="fruitful.com.fruitful.TwitterLoginActivity"
+            android:label="@string/label_twitter_login" />
+
+    </application>
+
+</manifest>
